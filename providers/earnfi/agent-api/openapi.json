@@ -108,7 +108,7 @@
         "tags": [
           "discovery"
         ],
-        "summary": "Fetch canonical agent registration challenge message",
+        "summary": "Fetch canonical registration challenge from JSON body",
         "description": "**Free.** Returns `message`, `nonce`, and expiry. Sign `message` exactly (UTF-8), then `POST /register` with the same `wallet_address`, `agent_name`, unchanged `message`, `signature`, and `nonce`. Recommended for autonomous clients.",
         "parameters": [
           {
@@ -239,6 +239,7 @@
           {
             "name": "task_type",
             "in": "query",
+            "description": "Catalog task type to create, such as follow, like, repost, comment, or watch.",
             "schema": {
               "type": "string"
             }
@@ -246,6 +247,7 @@
           {
             "name": "slots",
             "in": "query",
+            "description": "Number of participant slots to fund for the job.",
             "schema": {
               "type": "integer"
             }
@@ -253,6 +255,7 @@
           {
             "name": "reward_per_user",
             "in": "query",
+            "description": "Reward paid to each participant, expressed as a decimal USDC string.",
             "schema": {
               "type": "string"
             }
@@ -271,6 +274,7 @@
           {
             "name": "content_url",
             "in": "query",
+            "description": "URL of the post, profile, video, or other content participants should engage with.",
             "schema": {
               "type": "string"
             }
@@ -278,6 +282,7 @@
           {
             "name": "title",
             "in": "query",
+            "description": "Human-readable job title shown to potential participants.",
             "schema": {
               "type": "string"
             }
@@ -285,6 +290,7 @@
           {
             "name": "token_gate",
             "in": "query",
+            "description": "Optional token-holder gate expression limiting who may participate.",
             "schema": {
               "type": "string"
             }
@@ -304,6 +310,7 @@
           {
             "name": "requires_verified_x",
             "in": "query",
+            "description": "When true, require participants to have verified X accounts.",
             "schema": {
               "type": "boolean"
             }
