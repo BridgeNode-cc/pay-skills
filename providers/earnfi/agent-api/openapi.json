@@ -115,6 +115,7 @@
             "name": "wallet_address",
             "in": "query",
             "required": true,
+            "description": "Wallet address that will sign the returned registration challenge.",
             "schema": {
               "type": "string"
             }
@@ -123,6 +124,7 @@
             "name": "agent_name",
             "in": "query",
             "required": true,
+            "description": "Human-readable agent name to bind to the registration challenge.",
             "schema": {
               "type": "string"
             }
@@ -182,13 +184,16 @@
                 ],
                 "properties": {
                   "wallet_address": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Wallet address that signed the registration challenge message."
                   },
                   "agent_name": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Human-readable agent name requested during registration."
                   },
                   "message": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Exact challenge message returned by GET /register/challenge."
                   },
                   "signature": {
                     "type": "string",
@@ -589,6 +594,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Identifier for the job, interrupt, or verification resource in the path.",
             "schema": {
               "type": "string"
             }
@@ -631,6 +637,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Identifier for the job, interrupt, or verification resource in the path.",
             "schema": {
               "type": "string"
             }
@@ -673,6 +680,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Identifier for the job, interrupt, or verification resource in the path.",
             "schema": {
               "type": "string"
             }
@@ -715,6 +723,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Identifier for the job, interrupt, or verification resource in the path.",
             "schema": {
               "type": "string"
             }
@@ -759,6 +768,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Identifier for the job, interrupt, or verification resource in the path.",
             "schema": {
               "type": "string"
             }
@@ -793,6 +803,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Identifier for the job, interrupt, or verification resource in the path.",
             "schema": {
               "type": "string"
             }
@@ -837,6 +848,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Identifier for the job, interrupt, or verification resource in the path.",
             "schema": {
               "type": "string"
             }
@@ -881,6 +893,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Identifier for the job, interrupt, or verification resource in the path.",
             "schema": {
               "type": "string"
             }
@@ -915,6 +928,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Identifier for the job, interrupt, or verification resource in the path.",
             "schema": {
               "type": "string"
             }
@@ -959,6 +973,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Identifier for the job, interrupt, or verification resource in the path.",
             "schema": {
               "type": "string"
             }
@@ -993,6 +1008,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Identifier for the job, interrupt, or verification resource in the path.",
             "schema": {
               "type": "string"
             }
@@ -1027,6 +1043,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Identifier for the job, interrupt, or verification resource in the path.",
             "schema": {
               "type": "string"
             }
@@ -1061,6 +1078,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "Identifier for the job, interrupt, or verification resource in the path.",
             "schema": {
               "type": "string"
             }
@@ -1249,7 +1267,8 @@
         ],
         "properties": {
           "agent_token": {
-            "type": "string"
+            "type": "string",
+            "description": "Agent credential from POST /register."
           },
           "reason": {
             "type": "string"
@@ -1264,10 +1283,12 @@
         ],
         "properties": {
           "agent_token": {
-            "type": "string"
+            "type": "string",
+            "description": "Agent credential from POST /register."
           },
           "submission_id": {
-            "type": "string"
+            "type": "string",
+            "description": "Identifier of the contest submission to mark as winner."
           },
           "rank_position": {
             "type": "integer"
