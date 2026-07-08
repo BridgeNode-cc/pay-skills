@@ -4068,6 +4068,23 @@
               ],
               "unit": "tokens"
             }
+          ],
+          "schemes": [
+            "mpp-charge"
+          ]
+        },
+        "x-payment-info": {
+          "offers": [
+            {
+              "amount": "0",
+              "currency": "USDC",
+              "description": "0 USDC",
+              "intent": "charge",
+              "method": "mpp",
+              "network": "mainnet",
+              "payTo": "Cs2zdfUNonRdRGsiZUQQLdTxzxVvJZmgiX2mpLYKuEqP",
+              "scheme": "charge"
+            }
           ]
         }
       }
@@ -4317,6 +4334,23 @@
               ],
               "unit": "tokens"
             }
+          ],
+          "schemes": [
+            "mpp-charge"
+          ]
+        },
+        "x-payment-info": {
+          "offers": [
+            {
+              "amount": "0",
+              "currency": "USDC",
+              "description": "0 USDC",
+              "intent": "charge",
+              "method": "mpp",
+              "network": "mainnet",
+              "payTo": "Cs2zdfUNonRdRGsiZUQQLdTxzxVvJZmgiX2mpLYKuEqP",
+              "scheme": "charge"
+            }
           ]
         }
       }
@@ -4450,6 +4484,7 @@
           },
           "variants": [
             {
+              "description": "Fallback for unlisted Gemini models.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4476,6 +4511,7 @@
               "value": "default"
             },
             {
+              "description": "Premium image generation and editing.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4502,6 +4538,7 @@
               "value": "gemini-3-pro-image"
             },
             {
+              "description": "Low-cost image generation and editing.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4528,6 +4565,7 @@
               "value": "gemini-3.1-flash-lite-image"
             },
             {
+              "description": "Balanced image generation and editing.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4554,6 +4592,7 @@
               "value": "gemini-3.1-flash-image"
             },
             {
+              "description": "Fast image generation and editing.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4580,6 +4619,7 @@
               "value": "gemini-2.5-flash-image"
             },
             {
+              "description": "Lowest-cost text and multimodal generation.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4606,6 +4646,7 @@
               "value": "gemini-3.1-flash-lite"
             },
             {
+              "description": "Fast text and multimodal generation.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4632,6 +4673,7 @@
               "value": "gemini-3.1-flash"
             },
             {
+              "description": "Higher-capability fast multimodal model generation.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4658,6 +4700,7 @@
               "value": "gemini-3.5-flash"
             },
             {
+              "description": "Preview advanced reasoning and coding.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4684,6 +4727,7 @@
               "value": "gemini-3-pro-preview"
             },
             {
+              "description": "Preview advanced reasoning and coding.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4710,6 +4754,7 @@
               "value": "gemini-3.1-pro-preview"
             },
             {
+              "description": "Preview fast multimodal model generation.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4736,6 +4781,7 @@
               "value": "gemini-3-flash-preview"
             },
             {
+              "description": "Low-cost chat and data extraction.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4762,6 +4808,7 @@
               "value": "gemini-2.5-flash-lite"
             },
             {
+              "description": "Low-latency chat and coding tasks.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4788,6 +4835,7 @@
               "value": "gemini-2.5-flash"
             },
             {
+              "description": "Complex reasoning and multimodal analysis.",
               "dimensions": [
                 {
                   "direction": "input",
@@ -4812,6 +4860,21 @@
               ],
               "param": "model",
               "value": "gemini-2.5-pro"
+            }
+          ]
+        },
+        "x-payment-info": {
+          "offers": [
+            {
+              "amount": "345000",
+              "currency": "USDC",
+              "description": "up to 0.345 USDC",
+              "feePayer": "7oQ8rJs2PVZKGURpm5XB7MyxtFCxVkx3rh9ZbMApMP3X",
+              "intent": "charge",
+              "method": "x402",
+              "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+              "payTo": "Cs2zdfUNonRdRGsiZUQQLdTxzxVvJZmgiX2mpLYKuEqP",
+              "scheme": "upto"
             }
           ]
         }
@@ -5117,6 +5180,31 @@
               ],
               "param": "model",
               "value": "gemini-3-pro-image"
+            }
+          ]
+        },
+        "x-payment-info": {
+          "offers": [
+            {
+              "amount": "10000",
+              "currency": "USDC",
+              "description": "up to 0.01 USDC",
+              "feePayer": "7oQ8rJs2PVZKGURpm5XB7MyxtFCxVkx3rh9ZbMApMP3X",
+              "intent": "charge",
+              "method": "x402",
+              "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
+              "payTo": "Cs2zdfUNonRdRGsiZUQQLdTxzxVvJZmgiX2mpLYKuEqP",
+              "scheme": "upto"
+            },
+            {
+              "amount": "10000",
+              "currency": "USDC",
+              "description": "0.01 USDC",
+              "intent": "charge",
+              "method": "mpp",
+              "network": "mainnet",
+              "payTo": "Cs2zdfUNonRdRGsiZUQQLdTxzxVvJZmgiX2mpLYKuEqP",
+              "scheme": "charge"
             }
           ]
         }
