@@ -96,7 +96,7 @@
      {
       "name": "filter.status",
       "in": "query",
-      "description": "Filter by task status (queued, running, succeeded, failed, cancelled).",
+      "description": "Filter by task status (queued, running, succeeded, failed, cancelled, expired).",
       "schema": {
        "type": "string"
       }
@@ -245,7 +245,8 @@
      },
      "duration": {
       "type": "integer",
-      "description": "Video duration in seconds. Billing scales linearly with duration."
+      "description": "Video duration in seconds. Billing scales linearly with duration.",
+      "minimum": 1
      },
      "generate_audio": {
       "type": "boolean",
@@ -412,7 +413,11 @@
       "type": "integer",
       "description": "Unix timestamp."
      }
-    }
+    },
+    "required": [
+     "id",
+     "status"
+    ]
    },
    "VideoTaskList": {
     "type": "object",
