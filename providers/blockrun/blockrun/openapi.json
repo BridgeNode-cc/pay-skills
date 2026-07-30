@@ -1,7 +1,7 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "BlockRun OpenAI-Compatible API",
+    "title": "BlockRun - Stablecoin gated LLM inference",
     "version": "1.0.0",
     "description": "Accountless OpenAI-compatible chat completions with per-request x402 payments in USDC on Solana.",
     "x-logo": {

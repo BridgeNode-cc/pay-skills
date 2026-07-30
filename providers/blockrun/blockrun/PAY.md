@@ -1,6 +1,6 @@
 ---
 name: blockrun
-title: "BlockRun OpenAI-Compatible API"
+title: "BlockRun - Stablecoin gated LLM inference"
 description: "Accountless OpenAI-compatible chat completions across frontier models from OpenAI, Anthropic, Google, xAI, DeepSeek, and others, with per-request x402 payments in Solana USDC."
 use_case: "Use for pay-per-call LLM chat completions through the familiar OpenAI request shape when an agent needs model choice without API keys, accounts, subscriptions, or prepaid credits."
 category: ai_ml
