@@ -26,7 +26,15 @@
             }
           },
           "402": {
-            "description": "Payment Required — x402 challenge (PAYMENT-REQUIRED header)"
+            "description": "Payment Required — x402 challenge (PAYMENT-REQUIRED header)",
+            "headers": {
+              "PAYMENT-REQUIRED": {
+                "description": "x402 payment requirements for this request",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "description": "Pay per request with Solana USDC via x402 — no API keys, no accounts, no subscriptions. Generate a chat completion for the selected model. Paid endpoint: an unpaid request returns an x402 challenge (exact price in USDC atomic units, payTo and memo); sign the Solana USDC transfer and retry with the PAYMENT-SIGNATURE header. Provide either model (explicit id) or mode (auto/eco/premium routing); if both are sent, model wins. max_tokens defaults to 4096 and is clamped to the model's max output. To inspect models and prices first, use the free GET /v1/models.",
